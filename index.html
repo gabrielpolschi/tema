@@ -1,1 +1,99 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proiect – Afiș pentru Balul Bobocilor 2026</title>
+<style>
+:root{color-scheme:light}body{font-family:Arial,sans-serif;line-height:1.6;max-width:1000px;margin:2rem auto;padding:0 1.25rem;color:#222}
+h1,h2{color:#642896}h1{font-size:2rem}h2{margin-top:2rem;border-bottom:1px solid #ddd;padding-bottom:.3rem}
+table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{border:1px solid #bbb;padding:.55rem;text-align:left}th:nth-child(2),td:nth-child(2){text-align:center}th:nth-child(3),td:nth-child(3){text-align:right}
+code{background:#f3f3f3;padding:.1rem .25rem}pre{background:#f5f5f5;padding:1rem;overflow:auto}img{max-width:100%;height:auto} .meta{text-align:center;color:#555}
+.task{list-style:none;padding-left:0}.task li{margin:.35rem 0}
+</style>
+</head>
+<body>
+<header class="meta">
+<p><strong>Autor:</strong> Polschi Gabriel Eugen – clasa 12 A</p>
+<p><strong>Data:</strong> 3 noiembrie 2026 | <strong>Limba:</strong> română (ro-RO)</p>
+</header>
+<h1>Proiect: Afiș pentru Balul Bobocilor – Anii '80</h1>
+<p>Acest document organizează cerințele clientului, specificațiile tehnice și etapele realizării afișului pentru Balul Bobocilor 2026. Include calculele pentru fotografia de fundal, diagrama procesului și verificările documentelor exportate.</p>
+
+<h2>1. Cerințele clientului</h2>
+<ul>
+<li><strong>Client:</strong> Consiliul elevilor al liceului.</li>
+<li><strong>Eveniment:</strong> Balul Bobocilor 2026.</li>
+<li><strong>Data și ora:</strong> <strong>vineri, 20 noiembrie 2026</strong>, ora <strong>18:00</strong>.</li>
+<li><strong>Locul:</strong> sala de festivități.</li>
+<li><strong>Tema:</strong> <strong>„Anii '80”</strong>.</li>
+<li><strong>Culori dorite:</strong> <strong>mov, roz aprins și galben</strong>.</li>
+<li><strong>Elemente obligatorii:</strong> titlul, data și ora, locul, sigla liceului și o fotografie de fundal.</li>
+<li><strong>Termen de predare:</strong> <strong>6 noiembrie 2026</strong>.</li>
+<li><strong>Tiraj:</strong> 20 de exemplare tipărite și publicare pe pagina de Instagram a liceului.</li>
+</ul>
+<p><strong>Modificarea titlului:</strong> <del>Bal 2026</del> → <strong>Balul Bobocilor – Anii '80</strong>.</p>
+
+<h2>2. Date tehnice</h2>
+<table>
+<thead><tr><th>Element</th><th>Tipar</th><th>Ecran</th></tr></thead>
+<tbody>
+<tr><td>Dimensiune</td><td>A2 – 420 × 594 mm, portret</td><td>1080 × 1350 px</td></tr>
+<tr><td>Rezoluție</td><td>300 dpi</td><td>96 dpi</td></tr>
+<tr><td>Model de culoare</td><td>CMYK</td><td>RGB</td></tr>
+<tr><td>Format de predare</td><td>PDF/X-4</td><td>PNG</td></tr>
+</tbody></table>
+<p><strong>Formula pentru numărul de pixeli pe o latură:</strong></p>
+<p style="text-align:center;font-size:1.2rem"><strong>N = (L / 25,4) × R</strong></p>
+<p><strong>Legenda notațiilor:</strong></p>
+<ul><li><em>N</em> = numărul de pixeli pe latura respectivă, în pixeli (px);</li>
+<li><em>L</em> = lungimea laturii, în milimetri (mm);</li>
+<li><em>R</em> = rezoluția, în puncte pe inch (dpi);</li>
+<li>25,4 = numărul de milimetri dintr-un inch.</li></ul>
+<p><strong>Calculul dimensiunii minime a fotografiei de fundal pentru A2 la 300 dpi:</strong></p>
+<ul><li>Lățime: (420 / 25,4) × 300 = 4960,63, deci minimum <strong>4961 px</strong>.</li>
+<li>Înălțime: (594 / 25,4) × 300 = 7015,75, deci minimum <strong>7016 px</strong>.</li></ul>
+<p>Fotografia trebuie să aibă cel puțin <strong>4961 × 7016 px</strong>, fără a lua în calcul bleed-ul sau marginile de tăiere.</p>
+<p>Termenul <strong>preflight</strong> înseamnă verificarea tehnică a documentului înainte de tipărire: dimensiuni, fonturi, imagini, culori și eventuale erori de pregătire pentru tipar.<sup><a href="#nota1">1</a></sup></p>
+<p id="nota1"><sup>1</sup> Preflight-ul este controlul final al fișierului de machetare pentru a depista probleme care ar putea afecta tipărirea sau exportul.</p>
+
+<h2>3. Etape de lucru</h2>
+<ul class="task">
+<li>☒ Notarea cerințelor clientului.</li><li>☐ Scrierea textului afișului.</li><li>☐ Alegerea fonturilor și a culorilor.</li>
+<li>☐ Machetarea în Scribus.</li><li>☐ Verificarea (preflight).</li><li>☐ Exportul PDF și PNG.</li>
+</ul>
+
+<h2>4. Diagrama etapelor</h2>
+<pre><code>flowchart LR
+    A["Notarea cerințelor clientului"] --&gt; B["Scrierea textului afișului"]
+    B --&gt; C["Alegerea fonturilor și culorilor"]
+    C --&gt; D["Machetarea în Scribus"]
+    D --&gt; E{"Verificare"}
+    E --&gt;|Erori| D
+    E --&gt;|Fără erori| F["Export PDF și PNG"]</code></pre>
+<img src="../imagini/diagrama.png" alt="Diagramă logică a etapelor de realizare a afișului: cerințe, text, fonturi și culori, machetare, verificare cu revenire la machetare în caz de erori și export în caz contrar.">
+
+<h2>5. Verificare</h2>
+<p>Completează rubricile Word și HTML după deschiderea fișierelor exportate pe calculator.</p>
+<table>
+<thead><tr><th>Element verificat</th><th>Previzualizare</th><th>Word</th><th>HTML</th></tr></thead>
+<tbody>
+<tr><td>Titlul, autorul și data din antet apar</td><td>da</td><td>de verificat</td><td>de verificat</td></tr>
+<tr><td>Tabelul are alinierea cerută</td><td>da</td><td>de verificat</td><td>de verificat</td></tr>
+<tr><td>Formula se afișează ca formulă</td><td>da</td><td>de verificat</td><td>de verificat</td></tr>
+<tr><td>Nota de subsol apare și are număr</td><td>da</td><td>de verificat</td><td>de verificat</td></tr>
+<tr><td>Lista de sarcini are casete</td><td>da</td><td>de verificat</td><td>de verificat</td></tr>
+<tr><td>Diagrama Mermaid (blocul de cod) se desenează</td><td>bloc de cod</td><td>bloc de cod</td><td>bloc de cod</td></tr>
+<tr><td>Imaginea diagrama.png se afișează</td><td>da</td><td>de verificat</td><td>de verificat</td></tr>
+<tr><td>Diacriticele apar corect</td><td>da</td><td>de verificat</td><td>de verificat</td></tr>
+</tbody></table>
+
+<h2>6. Verificare cu AI</h2>
+<p>Aceste observații sunt exemple de verificări preliminare, nu un raport primit de la Gemini sau Claude.</p>
+<ol>
+<li><strong>Observație:</strong> tabelul tehnic are trei coloane, iar alinierile sunt declarate prin marcajele Markdown. <strong>Decizie: acceptată</strong> – sintaxa folosește marcajele pentru stânga, centru și dreapta.</li>
+<li><strong>Observație:</strong> dimensiunea minimă a fotografiei trebuie rotunjită în sus la pixeli întregi. <strong>Decizie: acceptată</strong> – rezultatele sunt 4961 × 7016 px, pentru ca fotografia să nu fie sub rezoluția cerută.</li>
+</ol>
+<p>După orice corectură acceptată, repetă exportul în Word și HTML și verifică din nou fișierele. Datele calendaristice și dimensiunile se păstrează conform cerințelor clientului.</p>
+</body></html>
 
